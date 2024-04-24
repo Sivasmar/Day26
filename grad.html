@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #siva {
+  height: 500px;
+  background-color: red;
+  background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+}
+.a{
+    
+  height: 100px;
+  width: 105px;
+  background-color: red; 
+  background-image: repeating-radial-gradient(rgb(43, 0, 255), rgb(255, 0, 234) 10%, rgb(0, 113, 128) 15%);
+  background-repeat: no-repeat;
+  animation: wave-circular 2s infinite linear;
+  border-radius: 50%;
+
+}
+@keyframes wave-circular{
+    0%{
+        background-size: 100px 100px;
+
+    }
+    100%{
+        background-size: 120px 120px;
+    }
+}
+.b{
+    height: 200px;
+  width: 200px;
+  background-color: red; 
+  background-image: conic-gradient(red 0deg, red 90deg, red 100deg, yellow 100deg, yellow 180deg, green 180deg, green 230deg, blue 230deg, blue 270deg);
+  border-radius: 50%;
+}
+.c{
+    position: relative;
+    left: 350px;
+    bottom:  200px;
+    text-align: center;
+    
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(6, 129, 8);">Linear Gradients :</h1>
+    <div id="siva" style="text-align:center;margin:auto;color:#121111;font-size:40px;font-weight:bold">
+
+        </div>
+        <br><br>
+        <br><br><br><br>
+        <br>
+        <h1 style="color: chocolate;">Radial Gradients :</h1>
+        <div class="a"> 
+        </div>
+        <br><br>
+
+
+        <h1 style="color: #b80b9b;">Conic Gradients:</h1>
+       <div>
+        <div class="b">
+            
+        </div>
+        <br><br><br>
+        <div class="c">
+            <div style="background-color: blue; width: 100px; color: beige;" >40% Blue</div>&nbsp;
+            <div style="background-color: rgb(6, 119, 33);  width: 100px;">10% Green</div>&nbsp;
+            <div style="background-color: hsl(59, 100%, 50%);  width: 100px;">22% Yellow</div>&nbsp;
+            <div style="background-color: rgb(229, 16, 16);  width: 100px;">28% Red</div>
+        </div>
+    </div>
+</body>
+</html>
